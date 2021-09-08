@@ -1,0 +1,15 @@
+{
+  "name": "Completeur de notation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "author": "Bat'",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-packager": "^14.2.1"
+  }
+}

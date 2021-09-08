@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Compléteur de Notation</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body style="-webkit-app-region: drag">
+        <div class='main-content'>
+            <div id='chessboard'>
+                <div id='a8' currentcell="0">
+                    <span class='column-blackSide'>a</span>
+                    <span class='line-blackSide'>8</span>
+                </div>
+                <div id='b8' currentcell="0">
+                    <span class='column-blackSide'>b</span>
+                </div>
+                <div id='c8' currentcell="0">
+                    <span class='column-blackSide'>c</span>
+                </div>
+                <div id='d8' currentcell="0">
+                    <span class='column-blackSide'>d</span>
+                </div>
+                <div id='e8' currentcell="0">
+                    <span class='column-blackSide'>e</span>
+                </div>
+                <div id='f8' currentcell="0">
+                    <span class='column-blackSide'>f</span>
+                </div>
+                <div id='g8' currentcell="0">
+                    <span class='column-blackSide'>g</span>
+                </div>
+                <div id='h8' currentcell="0">
+                    <span class='line-whiteSide'>8</span>
+                    <span class='column-blackSide'>h</span>
+                </div>
+                <div id='a7' currentcell="0">
+                    <span class='line-blackSide'>7</span>
+                </div>
+                <div id='b7' currentcell="0"></div>
+                <div id='c7' currentcell="0"></div>
+                <div id='d7' currentcell="0"></div>
+                <div id='e7' currentcell="0"></div>
+                <div id='f7' currentcell="0"></div>
+                <div id='g7' currentcell="0"></div>
+                <div id='h7' currentcell="0">
+                    <span class='line-whiteSide'>7</span>
+                </div>
+                <div id='a6' currentcell="0">
+                    <span class='line-blackSide'>6</span>
+                </div>
+                <div id='b6' currentcell="0"></div>
+                <div id='c6' currentcell="0"></div>
+                <div id='d6' currentcell="0"></div>
+                <div id='e6' currentcell="0"></div>
+                <div id='f6' currentcell="0"></div>
+                <div id='g6' currentcell="0"></div>
+                <div id='h6' currentcell="0">
+                    <span class='line-whiteSide'>6</span>
+                </div>
+                <div id='a5' currentcell="0">
+                    <span class='line-blackSide'>5</span>
+                </div>
+                <div id='b5' currentcell="0"></div>
+                <div id='c5' currentcell="0"></div>
+                <div id='d5' currentcell="0"></div>
+                <div id='e5' currentcell="0"></div>
+                <div id='f5' currentcell="0"></div>
+                <div id='g5' currentcell="0"></div>
+                <div id='h5' currentcell="0">
+                    <span class='line-whiteSide'>5</span>
+                </div>
+                <div id='a4' currentcell="0">
+                    <span class='line-blackSide'>4</span>
+                </div>
+                <div id='b4' currentcell="0"></div>
+                <div id='c4' currentcell="0"></div>
+                <div id='d4' currentcell="0"></div>
+                <div id='e4' currentcell="0"></div>
+                <div id='f4' currentcell="0"></div>
+                <div id='g4' currentcell="0"></div>
+                <div id='h4' currentcell="0">
+                    <span class='line-whiteSide'>4</span>
+                </div>
+                <div id='a3' currentcell="0">
+                    <span class='line-blackSide'>3</span>
+                </div>
+                <div id='b3' currentcell="0"></div>
+                <div id='c3' currentcell="0"></div>
+                <div id='d3' currentcell="0"></div>
+                <div id='e3' currentcell="0"></div>
+                <div id='f3' currentcell="0"></div>
+                <div id='g3' currentcell="0"></div>
+                <div id='h3' currentcell="0">
+                    <span class='line-whiteSide'>3</span>
+                </div>
+                <div id='a2' currentcell="0">
+                    <span class='line-blackSide'>2</span>
+                </div>
+                <div id='b2' currentcell="0"></div>
+                <div id='c2' currentcell="0"></div>
+                <div id='d2' currentcell="0"></div>
+                <div id='e2' currentcell="0"></div>
+                <div id='f2' currentcell="0"></div>
+                <div id='g2' currentcell="0"></div>
+                <div id='h2' currentcell="0">
+                    <span class='line-whiteSide'>2</span>
+                </div>
+                <div id='a1' currentcell="0">
+                    <span class='column-whiteSide'>a</span>
+                    <span class='line-blackSide'>1</span>
+                </div>
+                <div id='b1' currentcell="0">
+                    <span class='column-whiteSide'>b</span>
+                </div>
+                <div id='c1' currentcell="0">
+                    <span class='column-whiteSide'>c</span>
+                </div>
+                <div id='d1' currentcell="0">
+                    <span class='column-whiteSide'>d</span>
+                </div>
+                <div id='e1' currentcell="0">
+                    <span class='column-whiteSide'>e</span>
+                </div>
+                <div id='f1' currentcell="0">
+                    <span class='column-whiteSide'>f</span>
+                </div>
+                <div id='g1' currentcell="0">
+                    <span class='column-whiteSide'>g</span>
+                </div>
+                <div id='h1' currentcell="0">
+                    <span class='line-whiteSide'>1</span>
+                    <span class='column-whiteSide'>h</span>
+                </div>
+            </div>
+            <div id='chess-console'>
+                <div class='buttons'>
+                    <button class='left-button'>&#8249;</button>
+                    <button class='right-button'>&#8250;</button>
+                </div>
+                <div class='reverse-chessboard'>
+                    <button class='reverse'>Tourner l'échiquier<br><span>⇄</span></button>
+                </div>
+                <div class='game'>
+                    <div class='initial-game'>
+                        <div class='initial-game-header'>
+                            <button class='print-initial-game' title='Afficher la partie initiale'>
+                                ◉
+                            </button><h1>Partie initiale</h1>
+                        </div>
+                        <div class='initial-game-body'>
+
+                        </div>
+                    </div>
+                    <div class='corrected-game'>
+                        <div class='corrected-game-header'>
+                            <button class='print-corrected-game' title='Afficher la partie corrigée'>
+                                ◉
+                            </button><h1>Partie corrigée</h1>
+                    
+                        </div>
+                        <div class='corrected-game-body'>
+
+                        </div>
+                    </div>
+                    <div class='score'>
+                        <h1>Affichage du score de la partie</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript' src='cppData.js'></script>
+    </body>
+</html>
